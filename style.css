@@ -1,12 +1,8 @@
 :root {
   --blue: #d3e8f9;
   --grey: #282828;
+  --lightGrey: #cccccc;
   --white: #f8f8f8;
-}
-
-@font-face {
-  font-family: 'Handjet';
-  src: url('fonts/Handjet/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf');
 }
 
 * {
@@ -34,9 +30,9 @@
   padding: 20px;
 }
 
-img {
+#titleBar img {
   margin-bottom: 20px;
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 
@@ -47,7 +43,8 @@ img {
 .dayBtn:is(button) {
   height: 20px;
   width: 20px;
-  border-radius: 50%;
+  background-color: transparent;
+  color: var(--white);
 }
 
 .dayBtn:is(input) {
@@ -71,9 +68,15 @@ img {
 }
 
 #gameList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   font-weight: 200;
   color: var(--grey);
-  padding: 20px;
+  padding: 10px;
+  min-height: 80px;
 }
 
 .gameElement {
@@ -81,11 +84,9 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-
-  border: 2px solid var(--grey);
+  box-shadow: 1px 1px 3px var(--lightGrey);
   border-radius: 4px;
   padding: 5px;
-  margin-top: 5px;
   background-color: var(--white);
 }
 

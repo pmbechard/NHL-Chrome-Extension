@@ -8,7 +8,7 @@
     "default_popup": "index.html",
     "default_title": "NHL Scores"
   },
-  "description": "A Chrome extension that shows concise NHL game data for including past games, upcoming game times, and current scores.",
+  "description": "Stay up to date with the NHL's past games, upcoming game schedule, and live scores with this simple and concise browser extension.",
 
   "author": "Peyton Bechard"
 }
