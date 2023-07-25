@@ -2,7 +2,7 @@
 
 #### A Chrome extension that shows concise NHL game data for including past games, upcoming game times, and current scores..
 
-<div style="display: flex; justify-content: center; align-items: center;">
+<div style="text-align: center">
 <img src="./img/screenshots/pastGames.png" alt="Past Game Data" height="500px" width="auto"><img src="./img/screenshots/upcomingGames.png" alt="Upcoming Game Data" height="500px" width="auto">
 </div>
 
