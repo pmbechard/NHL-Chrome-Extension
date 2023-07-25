@@ -31,15 +31,28 @@ h1 {
   text-align: left;
 }
 
-.dayBtn,
-input {
+.dayBtn:is(button) {
+  height: 15px;
+  width: 15px;
+}
+
+.dayBtn:is(input) {
+  border: 1px solid #141824;
+  background-color: transparent;
+  color: #141824;
+}
+
+.dayBtn {
   border: none;
   border-radius: 4px;
   background-color: #141824;
   color: #fff;
-  height: 15px;
-  width: 15px;
   cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dayBtn:hover {
+  opacity: 0.8;
 }
 
 #gameList {
