@@ -6,8 +6,10 @@
 <img src='/img/screenshots/pastGames.png' alt='Past Games'>
 <img src='/img/screenshots/upcomingGames.png' alt='Upcoming Games'>
 
-### Download Link: Coming Soon
+## Download Link
 
-## Credits:
+#### Coming Soon
+
+## Credits
 
 Shout out to [Drew Hynes](https://github.com/dword4) for [his work documenting the NHL API](https://gitlab.com/dword4/nhlapi) and of course to the NHL for providing the API.
