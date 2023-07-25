@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "NHL Scores",
+  "version": "1.0.0",
+
+  "action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "index.html",
+    "default_title": "NHL Scores"
+  },
+  "description": "A Chrome extension that shows concise NHL game data for including past games, upcoming game times, and current scores.",
+
+  "author": "Peyton Bechard"
+}

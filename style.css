@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Handjet';
+  src: url('fonts/Handjet/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#root {
+  background-color: #cdf4ff;
+  padding: 20px;
+  min-width: 400px;
+  min-height: 100px;
+}
+
+#titleBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Handjet', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #141824;
+  text-align: left;
+}
+
+.dayBtn,
+input {
+  border: none;
+  border-radius: 4px;
+  background-color: #141824;
+  color: #fff;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+#gameList {
+  font-family: 'Handjet', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #141824;
+}
+
+.gameElement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  border: 2px solid #141824;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.teamDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+}
+
+.score {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.teamName {
+  font-weight: 300;
+}
+
+.teamLogo {
+  height: 30px;
+  width: auto;
+  background-color: transparent;
+}
+
+.atDiv {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.timeInfoDiv {
+  min-width: 75px;
+}
+
+#loadingImg {
+  height: 40px;
+  width: auto;
+  animation: alternate 0.8s linear infinite alternate;
+}
+
+@keyframes alternate {
+  0% {
+    transform: translateX(-40px) rotateY(0deg);
+  }
+  100% {
+    transform: translateX(40px) rotateY(-180deg);
+  }
+}
