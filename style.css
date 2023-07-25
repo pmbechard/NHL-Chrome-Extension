@@ -1,3 +1,9 @@
+:root {
+  --blue: #d3e8f9;
+  --grey: #282828;
+  --white: #f8f8f8;
+}
+
 @font-face {
   font-family: 'Handjet';
   src: url('fonts/Handjet/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf');
@@ -12,41 +18,50 @@
 }
 
 #root {
-  background-color: #cdf4ff;
-  padding: 20px;
+  color: var(--grey);
+  background-color: var(--blue);
   min-width: 400px;
   min-height: 100px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #titleBar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: var(--grey);
+  padding: 20px;
 }
 
-h1 {
-  font-family: 'Handjet', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #141824;
-  text-align: left;
+img {
+  margin-bottom: 20px;
+  height: 50px;
+  width: auto;
+}
+
+#changeDayContainer {
+  align-self: center;
 }
 
 .dayBtn:is(button) {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 .dayBtn:is(input) {
-  border: 1px solid #141824;
-  background-color: transparent;
-  color: #141824;
+  height: 20px;
+  border: 1px solid var(--white);
+  color: var(--grey);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .dayBtn {
   border: none;
   border-radius: 4px;
-  background-color: #141824;
-  color: #fff;
+  background-color: var(--white);
+  color: var(--grey);
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
 }
@@ -56,9 +71,9 @@ h1 {
 }
 
 #gameList {
-  font-family: 'Handjet', Helvetica, Arial, sans-serif;
   font-weight: 200;
-  color: #141824;
+  color: var(--grey);
+  padding: 20px;
 }
 
 .gameElement {
@@ -67,10 +82,11 @@ h1 {
   align-items: center;
   gap: 10px;
 
-  border: 2px solid #141824;
+  border: 2px solid var(--grey);
   border-radius: 4px;
   padding: 5px;
   margin-top: 5px;
+  background-color: var(--white);
 }
 
 .teamDiv {

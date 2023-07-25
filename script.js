@@ -16,12 +16,6 @@ document.getElementById('nextDayBtn').addEventListener('click', () => {
 async function main() {
   const dateString = getDateString(date);
   document.getElementById('dateSelect').value = dateString;
-  const title = document.getElementById('title');
-  title.textContent = `🗓️ ${new Date(dateString).toLocaleDateString('en-gb', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  })}`;
 
   const gameList = document.getElementById('gameList');
 
