@@ -123,16 +123,34 @@
 }
 
 #loadingImg {
-  height: 40px;
+  height: 30px;
   width: auto;
-  animation: alternate 0.8s linear infinite alternate;
+  animation: spin 2s linear infinite;
 }
 
-@keyframes alternate {
-  0% {
-    transform: translateX(-40px) rotateY(0deg);
+@keyframes spin {
+  12.5% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  37.5% {
+    transform: rotate(135deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62.5% {
+    transform: rotate(225deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  87.5% {
+    transform: rotate(315deg);
   }
   100% {
-    transform: translateX(40px) rotateY(-180deg);
+    transform: rotate(360deg);
   }
 }
